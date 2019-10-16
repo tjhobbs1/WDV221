@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debrief</title>
+	<script type="text/javascript">
+		function show1(){
+  			document.getElementById('div1').style.display ='none';
+		}
+		function show2(){
+		  	document.getElementById('div1').style.display = 'block';
+		  	document.getElementById("yes").checked = true;
+		}
+		function o2Check(){
+			let oxygen = document.getElementById("o2").value;
+			oxygen = Number(oxygen)
+			if (oxygen < 1000) {
+				alert("Change O2");
+			}
+			else{
+			
+			}
+		}
+	</script>
+
+	<style type="text/css">
+		
+		body {
+  			font-family: arial;
+		}
+		.hide {
+  			display: none;
+		}
+		p {
+		  font-weight: bold;
+		}
+	</style>
+
+</head>
+<body>
+
+	<p>Did the flight team intubate the patient?</p>
+<input type="radio" name="tab" value="igotnone" onclick="show2();" />
+Yes
+<input type="radio" name="tab" value="igottwo" onclick="show1();" />
+No
+
+<div id="div1" class="hide">
+  <hr><p>Did you utilize an RSI list</p>
+<input type="radio" value="Yes" name="rsiChecklist" id="yes">
+One &nbsp;
+<input type="radio" value="No" name="rsiChecklist">
+Two
+<input type="radio" value="NA" name="rsiChecklist" checked="no">
+NA
+<br>
+<label>Enter 02 amount</label>
+<input type="text" name="o2" id="o2" onblur="o2Check(value)">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Koala Bear Gallery</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="">
+
+        <!--Font Import-->
+
+        <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+
+
+        <!--Embedded Style Sheet-->
+        <style>
+
+            header{
+                border: thin solid black;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                padding: 0px;
+                
+            }
+
+            /*Header Logo*/
+                #logo {
+                    width: 100%;
+                    height: 100%;
+                
+                    
+                }
+
+             /*Changes background color*/
+             body{
+                    
+                    font-family: 'Playfair Display', serif;
+                  
+                }
+
+            /*Changes h1 background color*/
+            h1{
+                    background-color: green;
+                    text-align: center;
+                    margin-block-start: 0px;
+                    margin-block-end: 0px;
+                   
+                }
+            
+            /*Navigation*/
+            nav{
+                border: thin solid black;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                padding: -24px;
+            }
+
+            /*Navigation Bar CSS*/
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: black;
+            }
+
+            nav li {
+                float: left;
+                
+                }
+
+            nav li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            nav li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            .active {
+            background-color: #4CAF50;
+            }
+            
+            
+
+            section{
+                border-radius: 15px;
+                border: 2px solid #73AD21;
+                padding: 5px; 
+                width: 300px;
+                height: 250px; 
+            }
+
+           
+            /*Float Clearer*/
+                .clearFloat{
+                    clear:both;
+                }
+
+            footer{
+                background-color: black;
+                border: thin solid black;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+               
+                
+            
+            #footerText{
+                padding-top: 5px;
+                color: red;
+                text-align: center;
+            }
+
+
+            #footerImage{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 10%;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 10px;
+                grid-row-gap: 0px;
+            }
+
+            
+
+
+
+            
+           
+        
+        </style>
+    </head>
+    <body>
+
+    <div class="grid-container">
+        <!--Header-->
+        <header>
+            <img id="logo" src="images/koala_banner_new.jpg">
+            <h1>Koala Bear National Information Center</h1>
+  
+        </header>
+
+
+        <!--Navigation-->
+        <nav>
+            <!--Navigation Bar-->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="fast_facts.html">Fun Facts</a></li>
+                    <li><a href="aboutDogs.html">Gallery</a></li>
+                    <li><a href="aboutDogs.html">Adopt</a></li>
+                    <li><a href="aboutDogs.html">Contact Us</a></li>
+                </ul>
+                
+            </nav>
+        </nav>
+                        <header><h3 style="text-align: center">Koala Bear Image Gallery</h3></header>
+               
+            <section><img src="images/koala_a.jpg"></section>
+            <section><img src="images/koala_b.jpg"></section>
+            <section><img src="images/koala_c.jpg"></section>
+            <section><img src="images/koala_d.jpg"></section>
+            <section><img src="images/koala_e.jpg"></section>
+            <section><img src="images/koala_f.jpg"></section>
+            <section><img src="images/koala_g.jpg"></section>
+            <section><img src="images/koala_h.jpg"></section>
+            <section><img src="images/koala_i.jpg"></section>
+
+        <!--Footer-->
+        <footer>
+            <h6 id="footerText">&#169; COPYRIGHT 2018 ALL RIGHTS RESERVED. AUSTRALIAN KOALA FOUNDATION</h6>
+            
+            <img id="footerImage" src="images/KOALA_LOGO(3).svg">
+        </footer>
+    </div>
+    </body>
+</html>

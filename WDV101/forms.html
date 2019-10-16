@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+    <head>
+        
+        <title>Forms</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            form{
+                border: thin solid black;
+                width: 500px;
+                margin: auto;
+            }
+
+        
+        
+        </style>
+        
+    </head>
+    <body>
+        <form action="POST" action="">
+
+            <p>KOALA Form</p>
+
+            <div>
+                <label for="customerName">Name</label>
+                <input type="text" name="customerName">
+            </div>
+            <div>
+                <label for="customerEmail">Email</label>
+                <input type="email" name="customerEmail">
+            </div>
+            <div>
+                <label for="customerSubject">Subject</label>
+                <select name="customerSubject" id="subject">
+                    <option value="">Please Select Subject</option>
+                    <option value="donate">Donate Money</option>
+                    <option value="information">Request Information</option>
+                    <option value="visitRequest">Schedule A Visit</option>
+                </select>
+            </div>
+            <div>
+                <label for="customerComments">Comment</label>
+                <textarea name="customerComments" id="customerComments" cols="50" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="customerSubmit" value="Submit">
+                <input type="reset" name="customerSubmit" value="Submit">
+            </div>
+            
+
+        </form>
+       
+    </body>
+</html>

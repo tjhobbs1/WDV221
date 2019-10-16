@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Variables</title>
+
+  <script type="text/javascript">
+    var firstName; //Defines a global scope variable
+
+    firstName = "Ty";
+
+    var lastName = "Hobbs"; //Define and initialize all the same underline
+
+    schoolName = "DMACC";
+
+    document.write("<h1>schoolName</h1>");
+
+    console.log(schoolName);
+
+    console.log(lastName);
+
+    var lastName = "Test";
+
+    console.log(lastName);
+  </script>
+
+  <script type="text/javascript">
+    let counter;
+
+    console.log(counter);
+
+    counter = 25;
+
+    console.log(counter);
+
+    {
+      let goodNews = true; //define and initialize block scope variable
+      console.log(goodNews);
+    }
+
+    //console.log(goodNews);
+    // Will throw and error
+  </script>
+
+  <script type="text/javascript">
+    const COURSENAME = "WDV221"; //define a const variable global scope.
+    console.log(COURSENAME);
+
+    //const COURSENAME = "Intro to JS";
+    console.log(COURSENAME);
+  </script>
+
+  <script type="text/javascript">
+    document.write("<p>Your Name: " + firstName + "</p>");
+
+    let firstNameCaps = firstName.toUpperCase();
+    document.write("<p>Your Name: " + firstNameCaps + "</p>");
+  </script>
+
+
+</head>
+
+<body>
+
+  <h1>
+    <script>
+      document.write(schoolName);
+    </script>
+  </h1>
+
+  <p>Length of the First Name: <script type="text/javascript">
+      document.write(firstName.length);
+    </script>
+  </p>
+
+</body>
+
+</html>

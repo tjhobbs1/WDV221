@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Functions</title>
+
+  <script type="text/javascript">
+    //Global Variables
+    let firstName = "Ty";
+
+    //Function that displays a name when called.
+    function displayName() {
+      alert("Inside displayName");
+    }
+
+    //Call displayName()
+    displayName();
+
+    //Function that calls document.write of firstName.
+    function writeYourName() {
+
+      let lastName = "Hobbs"; //Local Variable
+
+      schoolName = "DMACC"; //Will make this a global variable due to not using let or var
+
+      document.write(firstName + " " + lastName);
+    }
+
+    let emailAddress = "tyhobbs319@gmail.com";
+
+    let atSymbol = emailAddress.indexOf("@");
+
+    let emailName = emailAddress.substr(0, atSymbol);  // pull the name from the email address.
+
+    let emailDomain = emailAddress.substr(atSymbol + 1); //pull the domain name from the email address.
+
+    console.log(atSymbol);
+
+    console.log(emailName);
+
+    console.log(emailDomain);
+  </script>
+
+
+</head>
+
+<body>
+
+  <h1>WDV221 Intro to Javascript</h1>
+
+  <h3 onclick="displayName();">Unit-3 Functions</h3>
+
+  <p>Welcome: <script type="text/javascript">
+      writeYourName();
+    </script>! We are
+    studying Javascript Functions.</p>
+
+  <p>Click the button <button onclick="displayName();">Display Name</button> to see your name.</p>
+
+  <p>To write your name <button onclick="writeYourName()">Display Your Name</button></p>
+
+
+</body>
+
+</html>

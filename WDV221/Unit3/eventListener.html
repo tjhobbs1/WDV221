@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script type="text/javascript">
+        function displayName(){
+
+          alert("Name");
+        }
+
+
+
+        function setUp(){
+          //let button1 = document.getElementById("button1"); //traditional method
+          let button1 = document.querySelector('#button1');  //more current method
+          //button1.onclick = displayName;
+          button1.onclick = function(){displayName()};
+
+        }
+
+
+
+
+    </script>
+  </head>
+  <body onload="setUp();">
+    <p>Display Name HTML: <button onClick="displayName()">Display</button></p>
+
+    <p>Display Name Javascript: <button id="button1">Display2</button></p>
+
+  </body>
+</html>

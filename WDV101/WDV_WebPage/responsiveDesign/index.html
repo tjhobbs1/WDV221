@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Design</title>
+
+        <style>
+       .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns */
+.column {
+  flex: 33.3%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 33%;
+    max-width: 33%;
+  }
+}
+
+/* Responsive layout  */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+        
+        </style>
+        
+        
+    </head>
+    <body>
+        <div class="row"> 
+            <div class="column">
+              <img src="images/balloons.jpg">
+              <img src="images/beagle_puppy.jpg">
+              <img src="images/bike_wheel.jpg">
+              <img src="images/border_collie.jpg">
+              <img src="images/border_collie2.jpg">
+              <img src="images/cheese.jpg">
+              <img src="images/chitz.jpg">
+            </div>
+            <div class="column">
+              <img src="images/cycle_gear.jpg">
+              <img src="images/cycling_bluesky.jpg">
+              <img src="images/cycling_sky.jpg">
+              <img src="images/cycling_workout.jpg">
+              <img src="images/cyclists.jpg">
+              <img src="images/forest.jpg">
+              <img src="images/wheel.jpg">
+            </div> 
+            <div class="column">
+              <img src="images/frog.jpg">
+              <img src="images/off_road.jpg">
+              <img src="images/pepper_cob.jpg">
+              <img src="images/pond.jpg">
+              <img src="images/red_lady.jpg">
+              <img src="images/trees1.jpg">
+              <img src="images/wine.jpg">
+            </div>
+           
+          </div>
+       
+    </body>
+</html>

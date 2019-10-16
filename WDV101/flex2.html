@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+    <head>
+        
+        <title>FlexBox</title>
+
+        <style>
+            nav{
+                background-color: lightblue;
+            }
+
+            nav ul{
+                list-style: none;
+                padding-left: 0px;
+            }
+
+            nav ul li{
+                margin-right: 10px;
+            }
+
+            nav ul li:last-child{
+                margin-left: auto;
+            }
+
+            .flex-container{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: stretch;
+                
+            }
+
+           
+        
+        </style>
+        
+    </head>
+    <body>
+        <h1>WDV101 Flexbox Example</h1>
+        <nav>
+            <ul class="flex-container">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>Sign In</li>
+                
+            </ul>
+        </nav>
+
+       
+    </body>
+</html>

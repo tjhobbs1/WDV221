@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+
+
+
+body {
+	background: hsl(0, 0%, 90%);
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+.banner {
+	background-color: gray;
+  text-align: center;
+}
+
+.banner p, .banner p a {
+  color: black;
+}
+
+.site-title {
+	color: black;
+  text-align: center;
+}
+
+
+.card {
+	background: white;
+	margin-bottom: 2em;
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+}
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.card-content p {
+	font-size: 80%;
+}
+
+/* Flexbox */
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+	flex: 0 1 24%;
+}
+
+.cardHeader{
+  text-align: center;
+}
+
+.cardDescription{
+  text-align: center;
+  font-size: 15px;
+  font-weight:normal;
+
+}
+
+
+    </style>
+  </head>
+  <body>
+<!--Header-->
+    <header class="banner">
+        <div class="centered">
+            <div class="site-branding">
+                <h1 class="site-title">JavaScript Homework</h1>
+                <p>WDV221 Wednesday Evening Class</p>
+            </div>
+        </div>
+    </header>
+  <!--End Header-->
+
+    <main class="main-area">
+
+        <div class="centered">
+        <!--CardSection-->
+            <section class="cards">
+              <!--Card 1-->
+                <article class="card">
+                    <a href="Unit1/Unit-1 Assignment.html">
+                        <picture>
+                            <img src="images/javascript.png">
+                        </picture>
+                        <div class="card-content">
+                            <h2 class="cardHeader">Unit 1</h2>
+                            <h4 class="cardDescription">JavaScript Introduction</h4>
+                        </div>
+                    </a>
+                </article>
+              <!--End Card 1-->
+
+              <!--Card 2-->
+                <article class="card">
+                    <a href="Unit2/Unit-2 Assignment.html">
+                        <picture>
+                            <img src="images/javascript.png">
+                        </picture>
+                        <div class="card-content">
+                            <h2 class="cardHeader">Unit 2</h2>
+                            <h4 class="cardDescription">Assignment - Variables and Data Types</h4>
+                        </div>
+                    </a>
+                </article>
+              <!--End Card 2-->
+
+              <!--Card 3-->
+                <article class="card">
+                    <a href="Unit3/Unit-3 Assignment.html">
+                        <picture>
+                            <img src="images/javascript.png">
+                        </picture>
+                        <div class="card-content">
+                            <h2 class="cardHeader">Unit 3</h2>
+                            <h4 class="cardDescription">Functions</h4>
+                        </div>
+                    </a>
+                </article>
+              <!--End Card 3-->
+
+              <!--Card 4-->
+                <article class="card">
+                    <a href="Unit4/Unit-4 Assignment.html">
+                        <picture>
+                            <img src="images/javascript.png">
+                        </picture>
+                        <div class="card-content">
+                            <h2 class="cardHeader">Unit 4</h2>
+                            <h4 class="cardDescription">Functions - Parameters & Returns  </h4>
+                        </div>
+                    </a>
+                </article>
+              <!--End Card 4-->
+              <!--Card 5-->
+                <article class="card">
+                    <a href="test1/labExam.html">
+                        <picture>
+                            <img src="images/javascript.png">
+                        </picture>
+                        <div class="card-content">
+                            <h2 class="cardHeader">Test 1</h2>
+                            <h4 class="cardDescription">In Class Test</h4>
+                        </div>
+                    </a>
+                </article>
+              <!--End Card 5-->
+              <!--Card 6-->
+                <article class="card">
+                    <a href="Unit5/styleObjectAssignment.html">
+                        <picture>
+                            <img src="images/javascript.png">
+                        </picture>
+                        <div class="card-content">
+                            <h2 class="cardHeader">Unit 5 Event Handlers</h2>
+                            <h4 class="cardDescription">Style Objects</h4>
+                        </div>
+                    </a>
+                </article>
+              <!--End Card 6-->
+
+
+
+
+            </section><!-- .cards -->
+
+        </div><!-- .centered -->
+
+    </main>
+
+  </body>
+</html>

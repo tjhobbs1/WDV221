@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Change</title>
+
+	
+
+	<script type="text/javascript">
+		function changeColor(id){
+			
+			document.querySelector("body").style.backgroundColor = id;	
+
+		}
+		function changeToOrginalColor(){
+			document.querySelector("body").style.backgroundColor = 'white';
+
+		}
+
+	</script>
+</head>
+<body>
+	<h2>WDV221 Intro to Javascript</h2>
+
+<form>
+	<input type="radio" name="changeBackground" onchange="changeColor('red')"  id="redButton"> Red<br>
+	<input type="radio" name="changeBackground" onchange="changeColor('blue')" value="blue" id="blueButton"> Blue<br>
+	<input type="radio" name="changeBackground" value="green" onchange="changeColor('green')"> Green
+
+	<br>
+	<input type="Reset" onclick="changeToOrginalColor()">
+</form>
+
+</body>
+</html>

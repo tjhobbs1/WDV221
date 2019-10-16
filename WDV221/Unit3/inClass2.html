@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Unit 3</title>
+
+    <script type="text/javascript">
+
+      function writeValue(){
+        document.write("Hello World");
+      }
+
+      function returnValue(){
+
+        return "Hello World";
+      }
+
+      let returnValueOut = returnValue();
+
+      console.log("variable return " + returnValueOut);
+
+      console.log(returnValue());
+
+      let amount = new Intl.NumberFormat('en-EU', { style: 'currency', currency: 'EUR' }).format(1456.89);
+
+       console.log(amount);
+
+
+
+    </script>
+  </head>
+  <body>
+
+    <h1>WDV221 Intro to Javascript</h1>
+    <h2>Unit-4 Parameters and Returns</h2>
+
+    <p> <script type="text/javascript">writeValue();</script> </p>
+
+    <script type="text/javascript">document.write(returnValue());</script>
+
+  </body>
+</html>

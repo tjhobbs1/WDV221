@@ -1,0 +1,215 @@
+   /* Typography imported from Google Fonts */
+   @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+   h1, h2, h3, h4, h5, h6, nav {
+     font-family: 'Playfair Display', serif;
+   }
+   
+   p, a {
+     font-family: 'Source Sans Pro', sans-serif;
+   }
+   
+   /* Generic styles */
+   
+   a {
+     background-color: goldenrod;
+     text-decoration: none;
+     color: white;
+     border-radius: 5%;
+     text-align: center;
+     display:inline-block;
+     transition: all .3s;
+   }
+   
+   a:hover {
+     opacity: .6;
+   }
+   
+   /* Styles for the banner image */
+   .banner {
+     /* Photo by mnm.all on Unsplash */
+     background: url('../images/mountains.jpg') center;
+     background-size: cover;
+     padding-top: 64px;
+     padding-bottom: 64px;
+     padding-left: 32px;
+     padding-right: 32px;
+     
+     /* grid styles */
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     align-items: center;
+   }
+   
+   .banner > * {
+     color: white;
+   }
+   
+   .banner > h1 {
+     font-size: 400%;
+     padding-bottom: 16px;
+   }
+   
+   .banner > article > p {
+     font-size: 24px;
+     font-weight: 200;
+   }
+   
+   .banner > article > a {
+     padding: 16px;
+     margin-top: 12px;
+   }
+   
+   /*Nav */
+   
+   * {
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+   }
+   body {
+       font-family: 'Josefin Sans', sans-serif;
+   }
+   .navbar {
+       font-size: 18px;
+       background-color:#333;
+       border: 1px solid rgba(0, 0, 0, 0.2);
+       padding-bottom: 10px;
+   }
+   .main-nav {
+       list-style-type: none;
+   }
+   .nav-links,
+  
+   .main-nav li {
+       text-align: center;
+       margin: 15px auto;
+       background-color:#333;
+   }
+   .logo {
+       display: inline-block;
+       font-size: 22px;
+       margin-top: 10px;
+       margin-left: 20px;
+       background-color:#333;
+   }
+   @media screen and (min-width: 768px) {
+       .navbar {
+           display: flex;
+           justify-content: space-between;
+           padding-bottom: 0;
+           height: 70px;
+           align-items: center;
+       }
+       .main-nav {
+           display: flex;
+           margin-right: 30px;
+           flex-direction: row;
+           justify-content: flex-end;
+       }
+       .navLi {
+           margin: 0;
+           background-color:#333;
+       }
+       .nav-links {
+           margin-left: 40px;
+           background-color:#333;
+       }
+       .logo {
+           margin-top: 0;
+           background-color:#333;
+       }
+      .navbar-toggle {
+          display: none;
+       }
+       .logo:hover,
+       .nav-links:hover {
+           color: rgba(255, 255, 255, 1);
+       }
+   
+   }
+   /* trips styles */
+   .trips {
+     padding: 32px;
+   }
+   
+   .trips > ul {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+     grid-gap: 16px;
+   }
+   
+   .trips > ul > li {
+     border: 1px solid #E2E2E2;
+     border-radius: 8px;
+     list-style: none;
+     
+   }
+   
+   .trips > ul > li > figure {
+     max-height: 190px;
+     overflow: hidden;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     position: relative;
+   }
+   
+   .trips > ul > li > figure > img {
+     width: 100%;
+   }
+   
+   .trips > ul > li > figure > figcaption {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+   }
+   
+   .trips > ul > li > figure > figcaption > h3 {
+     color: white;
+     padding: 12px;
+     font-size: 20px;
+   }
+   
+   .trips > ul > li > h3{
+       background-color:#8c7373;
+       color: white;
+       padding-left: 10px;
+       
+   }
+   
+   .trips > ul > li > p {
+     font-size: 16px;
+     line-height: 1.5;
+     padding: 16px 12px;
+     color: #666666;
+   }
+   
+   .trips > ul > li >section{
+   
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+   }
+   
+   .trips > ul > li >section > a {
+     padding-top: 16px;
+     padding-bottom: 16px;
+     padding-left: 16px;
+     padding-right: 16px;
+   
+     margin: 20px;
+     
+    
+   
+   }
+   
+   /* footer */
+   footer {
+     background-color: #333;
+     padding: 12px;
+     color: white;
+     text-align: center;
+     font-size: 12px;
+   }
+           

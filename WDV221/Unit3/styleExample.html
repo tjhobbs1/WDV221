@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Object Examples</title>
+
+<style>
+
+    p{
+      background-color: green;
+    }
+
+</style>
+
+<script type="text/javascript">
+    function displayBGColor(){
+      alert(document.getElementById("para1").style.backgroundColor);
+    }
+
+    function setBGColor(){
+      document.getElementById("para1").style.backgroundColor = "blue";
+    }
+</script>
+
+
+  </head>
+  <body>
+  <h3>Style Object Examples</h3>
+
+    <p id="para1">This is a paragraph<button onClick="displayBGColor()">Display Color</button></p>
+
+    <p>This is a paragraph<button onClick="setBGColor()">Set Color</button></p>
+
+    <p>This is a paragraph<button>Display Color</button></p>
+
+  </body>
+</html>

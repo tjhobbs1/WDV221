@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit 6 Math and Operators</title>
+
+	<script type="text/javascript">
+		let totalNumber = 5;  //global value
+
+		function displayInput(){
+			let inputValue = document.querySelector("#inScore").value;
+			document.querySelector("#outputDisplay").innerHTML = inputValue;
+			let inputNumber = parseInt(document.querySelector("#inNumber").value);
+			totalNumber += inputNumber;
+			document.querySelector("#outputDisplay2").innerHTML = totalNumber;
+			
+		}
+
+		let number = parseInt(45.2%);
+		console.log(number);
+
+	</script>
+</head>
+<body>
+	<h3>Unit-6 Math Operators</h3>
+	<form method="post" action="#">
+		<p>
+			<!--Wrapped Label-->
+			<label for="inScore">Enter Score
+				<input type="text" id="inScore" name="inScore">
+			</label>
+		</p>
+		<p>
+			<!--Stacked Label-->
+			<label for="inNumber">Enter Number</label>
+			<input type="text" id="inNumber" name="inNumber">
+		</p>
+
+		<input type="button" value="Submit" onclick="displayInput()">
+		<input type="reset" value="Clear Form">
+
+	</form>
+
+	<p id="outputDisplay"></p>
+	<p id="outputDisplay2"></p>
+
+
+</body>
+</html>
