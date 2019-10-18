@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>If Else</title>
+    <script type="text/javascript">
+      function compareValue(value1,value2){
+        if (value1 === value2){
+          console.log(value1 + " is equal to " + value2);
+        }else if(value1 < value2){
+          console.log(value1 + " is less than to " + value2);
+        }else if (value1 > value2){
+          console.log(value1 + " is greater than to " + value2);
+        }else{
+          console.log("Invalid Entry");                // Returns Invalid Entry
+        }
+      }//End ElseIF
+
+  //Test for compareValue function
+      compareValue(1,3);
+      compareValue(4,2);
+      compareValue(5,5);
+      compareValue("a",3);
+      compareValue(-1,7);
+      compareValue(-4,-5);
+      compareValue(4.1,5);
+      compareValue(7,8.8);
+      compareValue("*",4);
+      compareValue(3,";");
+      compareValue(4,".");
+      compareValue(.0,0);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

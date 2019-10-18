@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Compare Numbers</title>
+
+  <script type="text/javascript">
+    function compareValue() {
+      let val1 = document.querySelector("#val1").value;
+      let val2 = document.querySelector("#val2").value;
+      //console.log(val1 + val2);
+
+      if (val1 === val2) {
+        document.querySelector("#result").innerHTML = "Val 1: " + val1 +
+          " is equal to Val 2: " + val2;
+      } else {
+        if (val1 > val2) {
+          document.querySelector("#result").innerHTML = "Val 1: " + val1 +
+            " is greater than " + val2;
+        } else {
+          document.querySelector("#result").innerHTML = "Val 1: " + val1 +
+            " is less than " + val2;
+        } //End of nested if/else
+      } //End of if/else
+    } //End of compareValue()
+  </script>
+</head>
+
+<body>
+
+  <form class="" action="#" method="post">
+    <p>
+      <label>Enter Value 1:
+        <input type="text" name="val1" id="val1">
+      </label>
+    </p>
+
+    <p>
+      <label>Enter Value 2:
+        <input type="text" name="val2" id="val2">
+      </label>
+    </p>
+
+    <p>
+      <input type="button" value="Compare Values" onclick="compareValue()">
+      <input type="reset">
+    </p>
+
+  </form>
+
+  Result: <span id="result"></span>
+
+</body>
+
+</html>
